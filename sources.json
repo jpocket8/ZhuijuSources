@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-17T09:27:32.960208+00:00",
+  "attribution": {
+    "name": "awesome-zhuiju-free",
+    "author": "laoma2053 and contributors",
+    "url": "https://github.com/laoma2053/awesome-zhuiju-free",
+    "license": "CC-BY-4.0",
+    "changes": "Selected and normalized standard HTTPS interfaces; added app metadata"
+  },
+  "upstreams": [
+    {
+      "id": "lao-liu-bei",
+      "name": "老刘备",
+      "url": "https://raw.liucn.cc/box/m.json"
+    },
+    {
+      "id": "xiao-ma",
+      "name": "小马",
+      "url": "https://szyyds.cn/tv/x.json"
+    }
+  ],
+  "sources": [
+    {
+      "id": "baidu",
+      "name": "百度 · 老刘备",
+      "kind": "json-vod",
+      "url": "https://api.apibdzy.com/api.php/provide/vod/",
+      "canSearch": true
+    },
+    {
+      "id": "suoni",
+      "name": "索尼 · 老刘备",
+      "kind": "json-vod",
+      "url": "https://suoniapi.com/api.php/provide/vod/",
+      "canSearch": false
+    },
+    {
+      "id": "liangzi",
+      "name": "量子 · 小马（播放待恢复）",
+      "kind": "json-vod",
+      "url": "https://cj.lziapi.com/api.php/provide/vod/",
+      "canSearch": true
+    },
+    {
+      "id": "iptv-cn",
+      "name": "IPTV-org · 中国频道（HTTPS）",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u"
+    },
+    {
+      "id": "lao-liu-bei:662ecff9666ccdd6",
+      "name": "老刘备 · 🐉┃索尼┃高清",
+      "kind": "json-vod",
+      "url": "https://suoniapi.com/api.php/provide/vod/?ac=list",
+      "upstream": "lao-liu-bei",
+      "canSearch": true
+    },
+    {
+      "id": "lao-liu-bei:fd4648a913ae3343",
+      "name": "老刘备 · 🕹️淘片┃采集",
+      "kind": "json-vod",
+      "url": "https://taopianapi.com/cjapi/mc/vod/json.html",
+      "upstream": "lao-liu-bei",
+      "canSearch": true
+    },
+    {
+      "id": "lao-liu-bei:bf6e3b65b567dd62",
+      "name": "老刘备 · 🥑┃量子┃资源",
+      "kind": "json-vod",
+      "url": "https://lzizy1.com/api.php/provide/vod/",
+      "upstream": "lao-liu-bei",
+      "canSearch": true
+    },
+    {
+      "id": "lao-liu-bei:ab701ed43ec1a414",
+      "name": "老刘备 · 🦁┃四九┃资源",
+      "kind": "json-vod",
+      "url": "https://49zy1.com/api.php/provide/vod/?ac=list",
+      "upstream": "lao-liu-bei",
+      "canSearch": true
+    },
+    {
+      "id": "lao-liu-bei:fe47fb4bc93882e4",
+      "name": "老刘备 · 🛰️飞速┃采集",
+      "kind": "json-vod",
+      "url": "https://www.feisuzyapi.com/api.php/provide/vod/?ac=list",
+      "upstream": "lao-liu-bei",
+      "canSearch": true
+    },
+    {
+      "id": "lao-liu-bei:e789426585155dbf",
+      "name": "老刘备 · 🐯┃奇虎┃采集",
+      "kind": "json-vod",
+      "url": "https://caiji.qhzyapi.com/api.php/provide/vod/",
+      "upstream": "lao-liu-bei",
+      "canSearch": true
+    },
+    {
+      "id": "lao-liu-bei:7658f08e36947592",
+      "name": "老刘备 · ⛱┃可可┃采集",
+      "kind": "json-vod",
+      "url": "https://kekezy1.com/api.php/provide/vod/?ac=list",
+      "upstream": "lao-liu-bei",
+      "canSearch": true
+    },
+    {
+      "id": "lao-liu-bei:95990b844c6ffaa5",
+      "name": "老刘备 · 🐯虎牙采集",
+      "kind": "json-vod",
+      "url": "https://www.huyaapi.com/api.php/provide/vod/from/hym3u8",
+      "upstream": "lao-liu-bei",
+      "canSearch": true
+    },
+    {
+      "id": "lao-liu-bei:53a607284792fa5d",
+      "name": "老刘备 · 🦊火狐采集",
+      "kind": "json-vod",
+      "url": "https://hhzyapi.com/api.php/provide/vod/",
+      "upstream": "lao-liu-bei",
+      "canSearch": true
+    },
+    {
+      "id": "lao-liu-bei:8fbb4b22fdd10d52",
+      "name": "老刘备 · 🌪️暴风影音",
+      "kind": "json-vod",
+      "url": "https://app.bfzyapi.com/api.php/provide/vod/",
+      "upstream": "lao-liu-bei",
+      "canSearch": true
+    },
+    {
+      "id": "lao-liu-bei:986ffe9b2ad48314",
+      "name": "老刘备 · 🎏百度┃采集",
+      "kind": "json-vod",
+      "url": "https://api.apibdzy.com/api.php/provide/vod/?ac=list",
+      "upstream": "lao-liu-bei",
+      "canSearch": true
+    },
+    {
+      "id": "lao-liu-bei:340b974702e157c5",
+      "name": "老刘备 · 🎶明星┃MV",
+      "kind": "json-vod",
+      "url": "https://mv.wogg.link/mv/vod",
+      "upstream": "lao-liu-bei",
+      "canSearch": true
+    },
+    {
+      "id": "xiao-ma:c690dca7aebfe6f9",
+      "name": "小马 · 影视 | 极速[直连]",
+      "kind": "json-vod",
+      "url": "https://jszyapi.com/api.php/provide/vod/?ac=list",
+      "upstream": "xiao-ma",
+      "canSearch": true
+    },
+    {
+      "id": "xiao-ma:1a9ed2acc377051a",
+      "name": "小马 · 百度",
+      "kind": "json-vod",
+      "url": "https://api.apibdzy.com/api.php/provide/vod?ac=list",
+      "upstream": "xiao-ma",
+      "canSearch": true
+    },
+    {
+      "id": "xiao-ma:3244395857987950",
+      "name": "小马 · 影视 | 暴風[直连]",
+      "kind": "json-vod",
+      "url": "https://bfzyapi.com/api.php/provide/vod/?ac=list",
+      "upstream": "xiao-ma",
+      "canSearch": true
+    },
+    {
+      "id": "xiao-ma:8a1fb74978507ba8",
+      "name": "小马 · 红牛资源(切)",
+      "kind": "json-vod",
+      "url": "https://www.hongniuzy2.com/api.php/provide/vod/",
+      "upstream": "xiao-ma",
+      "canSearch": true
+    },
+    {
+      "id": "xiao-ma:23709682074e04fd",
+      "name": "小马 · 光速资源(切)",
+      "kind": "json-vod",
+      "url": "https://api.guangsuapi.com/api.php/provide/vod/",
+      "upstream": "xiao-ma",
+      "canSearch": true
+    }
+  ]
+}

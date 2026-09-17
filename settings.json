@@ -1,0 +1,37 @@
+{
+  "catalog": "https://raw.githubusercontent.com/laoma2053/awesome-zhuiju-free/main/resources/resources.json",
+  "upstreams": [
+    "lao-liu-bei",
+    "xiao-ma"
+  ],
+  "pinned": [
+    {
+      "id": "baidu",
+      "name": "百度 · 老刘备",
+      "kind": "json-vod",
+      "url": "https://api.apibdzy.com/api.php/provide/vod/",
+      "canSearch": true
+    },
+    {
+      "id": "suoni",
+      "name": "索尼 · 老刘备",
+      "kind": "json-vod",
+      "url": "https://suoniapi.com/api.php/provide/vod/",
+      "canSearch": false
+    },
+    {
+      "id": "liangzi",
+      "name": "量子 · 小马（播放待恢复）",
+      "kind": "json-vod",
+      "url": "https://cj.lziapi.com/api.php/provide/vod/",
+      "canSearch": true
+    },
+    {
+      "id": "iptv-cn",
+      "name": "IPTV-org · 中国频道（HTTPS）",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u"
+    }
+  ],
+  "disabledUrls": []
+}
