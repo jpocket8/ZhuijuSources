@@ -30,3 +30,10 @@ python scripts/update_sources.py
 ## 来源与许可
 
 目录来源：[laoma2053/awesome-zhuiju-free](https://github.com/laoma2053/awesome-zhuiju-free)，作者 laoma2053 及贡献者，采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。这里选取部分入口、提取标准接口并添加 App 元数据；上游未对本应用背书。第三方接口与内容的权利仍属于各自权利人。
+
+
+## YouTube 中文官方影视
+
+`youtube-channels.json` 维护已核实的官方频道，`youtube.json` 保存公开视频元数据。每日任务读取频道近期长视频（至少 10 分钟，排除明显预告和花絮），按明确的《片名》归组，逐日累积，最多保留 3000 条。初次接入不是完整历史片库。频道读取失败保留原目录，最新页缺失不代表下架。上映年份未知时留空，不把上传年份当上映年份。
+
+当前：央视电视剧、爱奇艺、爱奇艺大电影、腾讯视频。播放交给 App 内 YouTube 官方嵌入播放器，不保存媒体流地址；是否允许嵌入、登录和地区限制由 YouTube 决定。
