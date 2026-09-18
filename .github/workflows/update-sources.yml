@@ -1,0 +1,32 @@
+name: Update sources
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: update-sources
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test updater
+        run: python -m unittest discover -s scripts -p 'test_*.py'
+      - name: Update manifest
+        run: python scripts/update_sources.py
+      - name: Publish manifest
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add sources.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update source manifest'
+            git push
+          fi

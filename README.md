@@ -6,9 +6,9 @@
 
 ## 自动更新
 
-当前状态：片源已发布；每日工作流已在本地准备完成，等待 GitHub workflow 权限授权后启用。
+片源通过 GitHub Actions 每小时自动更新。
 
-GitHub Actions 每天 UTC 23:17（北京时间次日 07:17、布里斯班次日 09:17）运行；GitHub 调度可能延迟。也可在 Actions → Update sources → Run workflow 手动更新。
+GitHub Actions 每小时第 17 分钟运行；GitHub 调度可能延迟。也可在 Actions → Update sources → Run workflow 手动更新。
 
 任务读取 awesome-zhuiju-free 最新目录，按稳定 ID 找到老刘备、小马的配置地址，再提取 HTTPS 标准 JSON（type=1）接口。去重后生成 sources.json。不执行 JS/JAR 插件；暂不兼容的资源不会自动成为可用片源。同步成功不等于所有影片均能播放。
 
@@ -16,7 +16,7 @@ GitHub Actions 每天 UTC 23:17（北京时间次日 07:17、布里斯班次日 
 
 settings.json 的 pinned 是置顶保留片源与已知功能限制，disabledUrls 可禁用地址，upstreams 指定已适配的上游 ID。sources.json 是生成文件，不应直接维护。
 
-App 每次冷启动获取最新配置，也可在切换片源里手动刷新；验证通过才替换本地缓存。网络失败时使用缓存或内置片源。旧版 App 需先安装支持订阅的新 APK。
+App 距上次成功更新满 4 小时自动获取配置，在前台定期检查，重新打开时补查；验证通过才替换本地缓存。网络失败时使用缓存或内置片源。旧版 App 需先安装支持订阅的新 APK。
 
 ## 本地运行
 
