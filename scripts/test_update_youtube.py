@@ -12,6 +12,11 @@ class YouTubeTests(unittest.TestCase):
         self.assertEqual('测试剧',row['programme']);self.assertEqual('第01集',row['episode'])
     def test_unknown_title_not_guessed(self):
         self.assertEqual('完整官方标题',parse(self.html('完整官方标题'),self.channel)[0]['programme'])
+    def test_bilingual_episode_grouping(self):
+        row=parse(self.html('【Multi | FULL】In My Prime 生逢其时 | EP11 最新一集'),self.channel)[0]
+        self.assertEqual('生逢其时',row['programme'])
+    def test_members_only_excluded(self):
+        with self.assertRaises(ValueError):parse(self.html('【Kiwi Only | FULL】Show | EP02'),self.channel)
     def test_wrong_channel_rejected(self):
         with self.assertRaises(ValueError):parse(self.html(identity='wrong'),self.channel)
     def test_short_or_trailer_cannot_replace_catalog(self):

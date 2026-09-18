@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-18T02:55:29.767091+00:00",
+  "updatedAt": "2026-09-18T03:05:47.633165+00:00",
   "videos": [
     {
       "id": "JmJZMBCPBfM",
@@ -236,7 +236,7 @@
     {
       "id": "wIizIuIEIxU",
       "title": "【Multi | FULL】In My Prime 生逢其时 | EP11 🌟治愈！表姑鼓励齐时接纳白发，勇敢登台做最特别的自己！| iQIYI",
-      "programme": "【Multi | FULL】In My Prime 生逢其时 | EP11 🌟治愈！表姑鼓励齐时接纳白发，勇敢登台做最特别的自己！| iQIYI",
+      "programme": "生逢其时",
       "episode": "第11集",
       "category": "剧集",
       "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
@@ -247,7 +247,7 @@
     {
       "id": "7hpRd-xfqXc",
       "title": "【Multi | FULL】Forging Justice 重器 | EP32 😭太虐了！夏英杰惨遭蓄意谋杀，遗书曝光表白陈一众，阴阳两隔看哭全网！| iQIYI",
-      "programme": "【Multi | FULL】Forging Justice 重器 | EP32 😭太虐了！夏英杰惨遭蓄意谋杀，遗书曝光表白陈一众，阴阳两隔看哭全网！| iQIYI",
+      "programme": "重器",
       "episode": "第32集",
       "category": "剧集",
       "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
@@ -258,7 +258,7 @@
     {
       "id": "4kPvVSyMpSs",
       "title": "【Multi | FULL】AWAKEN 醒来 | EP20🔥高能！金宝化身狙击手暗杀日本高官，陈开来拍照掩护，礼盒藏杀机！ | iQIYI",
-      "programme": "【Multi | FULL】AWAKEN 醒来 | EP20🔥高能！金宝化身狙击手暗杀日本高官，陈开来拍照掩护，礼盒藏杀机！ | iQIYI",
+      "programme": "醒来",
       "episode": "第20集",
       "category": "剧集",
       "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
@@ -267,20 +267,9 @@
       "poster": "https://i.ytimg.com/vi/4kPvVSyMpSs/hqdefault.jpg"
     },
     {
-      "id": "rizdgyEV4Bc",
-      "title": "【Kiwi Only | FULL】Abyss 深渊无间 | EP09 | iQIYI",
-      "programme": "【Kiwi Only | FULL】Abyss 深渊无间 | EP09 | iQIYI",
-      "episode": "第09集",
-      "category": "剧集",
-      "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
-      "channelName": "爱奇艺",
-      "duration": 2308,
-      "poster": "https://i.ytimg.com/vi/rizdgyEV4Bc/hqdefault.jpg"
-    },
-    {
       "id": "zl767fsg_Bw",
       "title": "【Multi | FULL】Abyss 深渊无间 | EP07 🎬第7集：宋来福假死顶包案曝光😱！神秘三叔现身，大鬼二鬼究竟是谁？ | iQIYI",
-      "programme": "【Multi | FULL】Abyss 深渊无间 | EP07 🎬第7集：宋来福假死顶包案曝光😱！神秘三叔现身，大鬼二鬼究竟是谁？ | iQIYI",
+      "programme": "深渊无间",
       "episode": "第07集",
       "category": "剧集",
       "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
@@ -300,42 +289,9 @@
       "poster": "https://i.ytimg.com/vi/i-qoK_bLuIY/hqdefault.jpg"
     },
     {
-      "id": "BkKCq8McEIw",
-      "title": "【Kiwi Only | FULL】In My Prime 生逢其时 | EP13 | iQIYI",
-      "programme": "【Kiwi Only | FULL】In My Prime 生逢其时 | EP13 | iQIYI",
-      "episode": "第13集",
-      "category": "剧集",
-      "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
-      "channelName": "爱奇艺",
-      "duration": 2735,
-      "poster": "https://i.ytimg.com/vi/BkKCq8McEIw/hqdefault.jpg"
-    },
-    {
-      "id": "kg61Vh8oTBI",
-      "title": "【Kiwi Only | FULL】Spring of The Blade 一瓯春 | EP02 | iQIYI",
-      "programme": "【Kiwi Only | FULL】Spring of The Blade 一瓯春 | EP02 | iQIYI",
-      "episode": "第02集",
-      "category": "剧集",
-      "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
-      "channelName": "爱奇艺",
-      "duration": 2681,
-      "poster": "https://i.ytimg.com/vi/kg61Vh8oTBI/hqdefault.jpg"
-    },
-    {
-      "id": "ZSQ2SkmJYiE",
-      "title": "【Kiwi Only | FULL】Spring of The Blade 一瓯春 | EP01 | iQIYI",
-      "programme": "【Kiwi Only | FULL】Spring of The Blade 一瓯春 | EP01 | iQIYI",
-      "episode": "第01集",
-      "category": "剧集",
-      "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
-      "channelName": "爱奇艺",
-      "duration": 2570,
-      "poster": "https://i.ytimg.com/vi/ZSQ2SkmJYiE/hqdefault.jpg"
-    },
-    {
       "id": "H2eL9AIQSKA",
       "title": "【Multi | FULL】Spring of The Blade 一瓯春 | EP01 🎬许凯周也新剧开播！九年蛰伏双强复仇，横塘深宅好戏上演！（按姓氏笔画排序）） | iQIYI",
-      "programme": "【Multi | FULL】Spring of The Blade 一瓯春 | EP01 🎬许凯周也新剧开播！九年蛰伏双强复仇，横塘深宅好戏上演！（按姓氏笔画排序）） | iQIYI",
+      "programme": "一瓯春",
       "episode": "第01集",
       "category": "剧集",
       "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
@@ -346,7 +302,7 @@
     {
       "id": "-yUzW5fwm1E",
       "title": "【Multi | FULL】Spring of The Blade 一瓯春 | EP02🎬许凯 & 周也高能宅斗！满门遗孤化身复仇修罗，深宅讨债步步惊心！（按姓氏笔画排序） | iQIYI",
-      "programme": "【Multi | FULL】Spring of The Blade 一瓯春 | EP02🎬许凯 & 周也高能宅斗！满门遗孤化身复仇修罗，深宅讨债步步惊心！（按姓氏笔画排序） | iQIYI",
+      "programme": "一瓯春",
       "episode": "第02集",
       "category": "剧集",
       "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
@@ -357,7 +313,7 @@
     {
       "id": "my4M3t9zKPM",
       "title": "【Multi | FULL】AWAKEN 醒来 | EP19 🔥爽翻！苏门绝地反击当面对质，揭穿栽赃阴谋，杜黄桥惨遭革职！| iQIYI",
-      "programme": "【Multi | FULL】AWAKEN 醒来 | EP19 🔥爽翻！苏门绝地反击当面对质，揭穿栽赃阴谋，杜黄桥惨遭革职！| iQIYI",
+      "programme": "醒来",
       "episode": "第19集",
       "category": "剧集",
       "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
@@ -368,7 +324,7 @@
     {
       "id": "XHPhDkc5fKI",
       "title": "【Multi | FULL】Forging Justice 重器 | EP31 🔥高能反转！陈一众当庭给当事人下套，胡旭东暴怒，庭审博弈太刺激！| iQIYI",
-      "programme": "【Multi | FULL】Forging Justice 重器 | EP31 🔥高能反转！陈一众当庭给当事人下套，胡旭东暴怒，庭审博弈太刺激！| iQIYI",
+      "programme": "重器",
       "episode": "第31集",
       "category": "剧集",
       "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
@@ -386,17 +342,6 @@
       "channelName": "爱奇艺",
       "duration": 12397,
       "poster": "https://i.ytimg.com/vi/PPdW3EudxEs/hqdefault.jpg"
-    },
-    {
-      "id": "gn01QHt3Eo4",
-      "title": "【Kiwi Only | FULL】AWAKEN 醒来 | EP21 | iQIYI",
-      "programme": "【Kiwi Only | FULL】AWAKEN 醒来 | EP21 | iQIYI",
-      "episode": "第21集",
-      "category": "剧集",
-      "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
-      "channelName": "爱奇艺",
-      "duration": 2734,
-      "poster": "https://i.ytimg.com/vi/gn01QHt3Eo4/hqdefault.jpg"
     },
     {
       "id": "FW9FNc2bZes",
@@ -705,17 +650,6 @@
       "channelName": "爱奇艺大电影",
       "duration": 5115,
       "poster": "https://i.ytimg.com/vi/SvYKPG0BOGw/hqdefault.jpg"
-    },
-    {
-      "id": "rtdb1645eos",
-      "title": "【会员专享】MULTI SUB【完美世界 Perfect World】EP287 #完美世界 #PerfectWorld",
-      "programme": "【会员专享】MULTI SUB【完美世界 Perfect World】EP287 #完美世界 #PerfectWorld",
-      "episode": "第287集",
-      "category": "剧集",
-      "channelId": "UCQatgKoA7lylp_UzvsLCgcw",
-      "channelName": "腾讯视频",
-      "duration": 1268,
-      "poster": "https://i.ytimg.com/vi/rtdb1645eos/hqdefault.jpg"
     },
     {
       "id": "D4q30FsikpY",

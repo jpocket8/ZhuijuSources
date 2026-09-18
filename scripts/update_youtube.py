@@ -31,10 +31,16 @@ def parse(html, channel):
         title = view.get('metadata', {}).get('lockupMetadataViewModel', {}).get('title', {}).get('content', '')
         lengths = [duration(b.get('text', '')) for b in walk(view.get('contentImage', {}), 'thumbnailBadgeViewModel')]
         if not re.fullmatch(r'[A-Za-z0-9_-]{11}', identity) or not title or max(lengths, default=0) < 600: continue
-        if re.search(r'预告|預告|trailer|花絮|behind the scenes', title, re.I): continue
+        if re.search(r'预告|預告|trailer|花絮|behind the scenes|kiwi only|members only|会员专享|會員專享', title, re.I): continue
         names = re.findall(r'《([^》]+)》', title)
         # A bracketed official programme name can group episodes safely. Keep other upload titles intact.
         name = names[0].strip() if len(set(names)) == 1 else title
+        if not names:
+            clean = re.sub(r'^【[^】]+】\s*', '', title)
+            prefix = re.split(r'\s*[|｜]\s*EP\s*\d+', clean, maxsplit=1, flags=re.I)
+            if len(prefix) == 2:
+                chinese = re.search(r'[\u4e00-\u9fff][\u4e00-\u9fff·：:0-9 ]*$', prefix[0].strip())
+                name = chinese.group().strip() if chinese else prefix[0].strip()
         ep = re.search(r'(?:EP\s*|第)(\d+)(?:[-–]([0-9]+))?(?:集)?', title, re.I)
         episode = ('第' + ep.group(1) + (('-' + ep.group(2)) if ep.group(2) else '') + '集') if ep else title
         videos.append(dict(id=identity, title=title, programme=name, episode=episode,
@@ -46,7 +52,23 @@ def parse(html, channel):
 def main():
     target=ROOT/'youtube.json'
     old=json.loads(target.read_text(encoding='utf-8')) if target.exists() else {'videos': []}
-    by_id={v['id']:v for v in old['videos']}
+    by_id={}
+    for v in old['videos']:
+        title=v['title']
+        if re.search(r'kiwi only|members only|会员专享|會員專享',title,re.I): continue
+        names = re.findall(r'《([^》]+)》', title)
+        # A bracketed official programme name can group episodes safely. Keep other upload titles intact.
+        name = names[0].strip() if len(set(names)) == 1 else title
+        if not names:
+            clean = re.sub(r'^【[^】]+】\s*', '', title)
+            prefix = re.split(r'\s*[|｜]\s*EP\s*\d+', clean, maxsplit=1, flags=re.I)
+            if len(prefix) == 2:
+                chinese = re.search(r'[\u4e00-\u9fff][\u4e00-\u9fff·：:0-9 ]*$', prefix[0].strip())
+                name = chinese.group().strip() if chinese else prefix[0].strip()
+        ep = re.search(r'(?:EP\s*|第)(\d+)(?:[-–]([0-9]+))?(?:集)?', title, re.I)
+        episode = ('第' + ep.group(1) + (('-' + ep.group(2)) if ep.group(2) else '') + '集') if ep else title
+        v['programme']=name;v['episode']=episode
+        by_id[v['id']]=v
     success=0
     for channel in json.loads((ROOT/'youtube-channels.json').read_text(encoding='utf-8')):
         try:

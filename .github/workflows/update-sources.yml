@@ -22,6 +22,7 @@ jobs:
       - name: Update manifest
         run: python scripts/update_sources.py
       - name: Update official YouTube catalog
+        continue-on-error: true
         run: python scripts/update_youtube.py
       - name: Publish manifest
         run: |

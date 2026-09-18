@@ -184,5 +184,35 @@
       "upstream": "xiao-ma",
       "canSearch": true
     }
+  ],
+  "youtubeChannels": [
+    {
+      "id": "cctv-drama",
+      "name": "央视电视剧",
+      "handle": "CCTVDrama",
+      "channelId": "UC7Vl0YiY0rDlovqcCFN4yTA",
+      "category": "剧集"
+    },
+    {
+      "id": "iqiyi-drama",
+      "name": "爱奇艺",
+      "handle": "iQIYIofficial",
+      "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
+      "category": "剧集"
+    },
+    {
+      "id": "iqiyi-movie",
+      "name": "爱奇艺大电影",
+      "handle": "iQIYIMOVIETHEATER",
+      "channelId": "UCZ8ZJNzzIiDQFuGxdGTyWcQ",
+      "category": "电影"
+    },
+    {
+      "id": "tencent-drama",
+      "name": "腾讯视频",
+      "handle": "TencentVideo",
+      "channelId": "UCQatgKoA7lylp_UzvsLCgcw",
+      "category": "剧集"
+    }
   ]
 }

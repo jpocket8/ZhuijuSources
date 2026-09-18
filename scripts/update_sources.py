@@ -94,6 +94,7 @@ def build(settings, fetcher=fetch):
 def main():
     settings = json.loads((ROOT / 'settings.json').read_text(encoding='utf-8'))
     manifest = build(settings)  # Do not replace last good file if ANY upstream fails.
+    manifest['youtubeChannels'] = json.loads((ROOT / 'youtube-channels.json').read_text(encoding='utf-8'))
     target = ROOT / 'sources.json'
     temp = target.with_suffix('.tmp')
     temp.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
