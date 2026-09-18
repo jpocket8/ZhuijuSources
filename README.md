@@ -6,9 +6,9 @@
 
 ## 自动更新
 
-片源通过 GitHub Actions 每小时自动更新。
+片源通过 GitHub Actions 每天自动更新。
 
-GitHub Actions 每小时第 17 分钟运行；GitHub 调度可能延迟。也可在 Actions → Update sources → Run workflow 手动更新。
+GitHub Actions 每天 UTC 23:17（北京时间次日 07:17、布里斯班次日 09:17）运行；GitHub 调度可能延迟。也可在 Actions → Update sources → Run workflow 手动更新。
 
 任务读取 awesome-zhuiju-free 最新目录，按稳定 ID 找到老刘备、小马的配置地址，再提取 HTTPS 标准 JSON（type=1）接口。去重后生成 sources.json。不执行 JS/JAR 插件；暂不兼容的资源不会自动成为可用片源。同步成功不等于所有影片均能播放。
 
