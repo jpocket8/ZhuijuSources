@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-21T23:23:29.865382+00:00",
+  "updatedAt": "2026-09-22T21:43:12.815141+00:00",
   "attribution": {
     "name": "awesome-zhuiju-free",
     "author": "laoma2053 and contributors",
@@ -183,6 +183,48 @@
       "url": "https://api.guangsuapi.com/api.php/provide/vod/",
       "upstream": "xiao-ma",
       "canSearch": true
+    },
+    {
+      "id": "free-au",
+      "name": "Free-TV · 澳洲",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_australia.m3u8",
+      "upstreamRepository": "https://github.com/Free-TV/IPTV"
+    },
+    {
+      "id": "free-cn",
+      "name": "Free-TV · 中国",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_china.m3u8",
+      "upstreamRepository": "https://github.com/Free-TV/IPTV"
+    },
+    {
+      "id": "free-hk",
+      "name": "Free-TV · 香港",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_hong_kong.m3u8",
+      "upstreamRepository": "https://github.com/Free-TV/IPTV"
+    },
+    {
+      "id": "iptv-au",
+      "name": "IPTV-org · 澳洲",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/au.m3u",
+      "upstreamRepository": "https://github.com/iptv-org/iptv"
+    },
+    {
+      "id": "iptv-hk",
+      "name": "IPTV-org · 香港",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/hk.m3u",
+      "upstreamRepository": "https://github.com/iptv-org/iptv"
+    },
+    {
+      "id": "iptv-tw",
+      "name": "IPTV-org · 台湾",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tw.m3u",
+      "upstreamRepository": "https://github.com/iptv-org/iptv"
     }
   ],
   "youtubeChannels": [

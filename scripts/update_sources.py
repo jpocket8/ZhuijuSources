@@ -73,6 +73,8 @@ def build(settings, fetcher=fetch):
         address = upstream['url']
         rows.extend(extract(fetcher(address), address, upstream))
         origins.append(dict(id=identity, name=upstream['name'], url=address))
+    # Append optional live lists so existing source numbering is preserved.
+    rows.extend(settings.get("additionalSources", []))
     result = []
     seen = set()
     for row in rows:

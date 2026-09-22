@@ -31,6 +31,14 @@ class UpdateTests(unittest.TestCase):
         self.assertEqual('saved', result['sources'][0]['id'])
         self.assertFalse(result['sources'][0]['canSearch'])
 
+    def test_additional_live_sources_append_after_existing_sources(self):
+        live = {'id': 'live', 'name': 'Live', 'kind': 'm3u', 'url': 'https://live.test/list.m3u'}
+        pinned = {'id': 'saved', 'name': 'Saved', 'kind': 'json-vod', 'url': 'https://new.test/api'}
+        result = build({'catalog': 'catalog', 'upstreams': [], 'pinned': [pinned],
+                        'additionalSources': [live, dict(live, id='duplicate')]},
+                       lambda _: {'resources': []})
+        self.assertEqual(['saved', 'live'], [row['id'] for row in result['sources']])
+
     def test_upstream_failure_aborts_publish(self):
         def fetch(url):
             raise OSError('offline')
