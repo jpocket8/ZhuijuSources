@@ -76,6 +76,13 @@
       "kind": "m3u",
       "url": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tw.m3u",
       "upstreamRepository": "https://github.com/iptv-org/iptv"
+    },
+    {
+      "id": "iptv-global",
+      "name": "IPTV-org · 全球频道",
+      "kind": "m3u",
+      "url": "https://iptv-org.github.io/iptv/index.m3u",
+      "upstreamRepository": "https://github.com/iptv-org/iptv"
     }
   ]
 }
