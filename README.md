@@ -45,3 +45,11 @@ python scripts/update_sources.py
 只引用上游播放列表，不复制其代码或宣称其内容属于本仓库许可证。IPTV-org 使用 Unlicense；Free-TV/IPTV 未声明仓库许可证。频道和台标权利归各自权利人。
 
 本次在澳洲网络用客户端相同的 HLS/视频分片探测抽查 28 条线路，13 条通过；这是抽样结果，不代表全部可播放。新增六份列表合计 134 个 HTTPS 条目，含重复及地区限制频道，不等于新增可播放频道数。客户端继续验证播放分片、过滤失败线路并合并重复节目。Free-TV 台湾列表主要是 YouTube 页面，不符合当前 M3U 直播路径，未添加。
+
+### TVBOX 直播导入
+
+源更新器独立实现 TVBOX `lives` 数据读取，不执行 `spider`、解析器或插件。已有 `upstreams` 中的直播配置随更新导入；也可以在 `settings.json` 添加 `liveSubscriptions` 数组，每项包含 `name` 和 HTTPS `url`（TVBOX 配置地址）。
+
+支持 `lives[].url` 指向 M3U 或 `频道名,地址` 的 TXT（含 `分组,#genre#`、`#` 分隔多线路），以及内嵌 `groups[].channels[].urls`。保留分组、频道标识、台标、User-Agent/Referer；重复频道地址去重，协议不支持的条目跳过。频道可以使用 HTTP/HTTPS，订阅必须 HTTPS。不导入点播 Spider、加密配置或代理指令。
+
+转换后的 M3U 放在 `live/`，通过现有 `sources.json` 下发给所有客户端，继续使用客户端的线路检测和同频道合并。更新结果的 `liveImport` 记录跳过条目和上游错误；下载失败保留该订阅上次成功文件，首次失败则跳过，不阻塞其他直播源。此列表是可解析地址，不代表每个频道都已验证可播放。

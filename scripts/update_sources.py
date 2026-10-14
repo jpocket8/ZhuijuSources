@@ -63,16 +63,32 @@ def extract(config, address, upstream):
         raise ValueError('No compatible sources; retain last published manifest')
     return rows
 
-def build(settings, fetcher=fetch):
+def build(settings, fetcher=fetch, live_fetcher=None):
     catalog = fetcher(settings['catalog'])
     directory = {r['id']: r for r in catalog['resources']}
     rows = list(settings['pinned'])
     origins = []
+    live_artifacts = {}
+    live_skipped = 0
+    live_errors = []
+    previous_live = {p.name:p.read_text(encoding="utf-8") for p in (ROOT/"live").glob("*.m3u")}
+    from tvbox_live import extract as extract_live, fetch_text
     for identity in settings['upstreams']:
         upstream = directory[identity]
         address = upstream['url']
-        rows.extend(extract(fetcher(address), address, upstream))
+        config = fetcher(address)
+        if config.get('sites'):
+            rows.extend(extract(config, address, upstream))
+        live, files, skipped = extract_live(config, address, upstream, live_fetcher or fetch_text, previous_live, live_errors)
+        rows.extend(live); live_artifacts.update(files); live_skipped += skipped
         origins.append(dict(id=identity, name=upstream['name'], url=address))
+    for subscription in settings.get('liveSubscriptions', []):
+        address = subscription['url']
+        upstream = dict(id='live-subscription:'+hashlib.sha256(address.encode()).hexdigest()[:16],name=subscription['name'])
+        config = fetcher(address)
+        live, files, skipped = extract_live(config, address, upstream, live_fetcher or fetch_text, previous_live, live_errors)
+        rows.extend(live); live_artifacts.update(files); live_skipped += skipped
+        origins.append(dict(id=upstream['id'],name=upstream['name'],url=address))
     # Append optional live lists so existing source numbering is preserved.
     rows.extend(settings.get("additionalSources", []))
     result = []
@@ -91,12 +107,15 @@ def build(settings, fetcher=fetch):
                 attribution=dict(name='awesome-zhuiju-free', author='laoma2053 and contributors',
                                  url='https://github.com/laoma2053/awesome-zhuiju-free',
                                  license='CC-BY-4.0', changes='Selected and normalized standard HTTPS interfaces; added app metadata'),
-                upstreams=origins, sources=result)
+                upstreams=origins, sources=result, liveImport=dict(skipped=live_skipped, playlists=len(live_artifacts), errors=live_errors), _liveArtifacts=live_artifacts)
 
 def main():
     settings = json.loads((ROOT / 'settings.json').read_text(encoding='utf-8'))
     manifest = build(settings)  # Do not replace last good file if ANY upstream fails.
     manifest['youtubeChannels'] = json.loads((ROOT / 'youtube-channels.json').read_text(encoding='utf-8'))
+    for name, content in manifest.pop('_liveArtifacts').items():
+        folder = ROOT / 'live'; folder.mkdir(exist_ok=True)
+        pending = folder / (name+'.tmp'); pending.write_text(content,encoding='utf-8'); pending.replace(folder/name)
     target = ROOT / 'sources.json'
     temp = target.with_suffix('.tmp')
     temp.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
