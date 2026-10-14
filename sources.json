@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T01:53:31.707239+00:00",
+  "updatedAt": "2026-10-14T21:16:46.444272+00:00",
   "attribution": {
     "name": "awesome-zhuiju-free",
     "author": "laoma2053 and contributors",
@@ -145,6 +145,13 @@
       "canSearch": true
     },
     {
+      "id": "tvbox-live:0ad96a5d31734b1d",
+      "name": "老刘备 · SAO0",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/jpocket8/ZhuijuSources/main/live/tvbox-live-0ad96a5d31734b1d.m3u",
+      "upstream": "lao-liu-bei"
+    },
+    {
       "id": "xiao-ma:c690dca7aebfe6f9",
       "name": "小马 · 影视 | 极速[直连]",
       "kind": "json-vod",
@@ -183,6 +190,20 @@
       "url": "https://api.guangsuapi.com/api.php/provide/vod/",
       "upstream": "xiao-ma",
       "canSearch": true
+    },
+    {
+      "id": "tvbox-live:4c0b77cb0cf51625",
+      "name": "小马 · 手动不知何时更新",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/jpocket8/ZhuijuSources/main/live/tvbox-live-4c0b77cb0cf51625.m3u",
+      "upstream": "xiao-ma"
+    },
+    {
+      "id": "tvbox-live:eb88a8e54057b432",
+      "name": "小马 · 自动更新",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/jpocket8/ZhuijuSources/main/live/tvbox-live-eb88a8e54057b432.m3u",
+      "upstream": "xiao-ma"
     },
     {
       "id": "free-au",
@@ -234,6 +255,32 @@
       "upstreamRepository": "https://github.com/iptv-org/iptv"
     }
   ],
+  "liveImport": {
+    "skipped": 10,
+    "playlists": 3,
+    "errors": [
+      {
+        "source": "老刘备 · IPV6",
+        "error": "HTTP Error 404: Not Found",
+        "retained": false
+      },
+      {
+        "source": "小马 · 咪咕",
+        "error": "No compatible live channels",
+        "retained": false
+      },
+      {
+        "source": "小马 · 音乐所",
+        "error": "Live subscription too large",
+        "retained": false
+      },
+      {
+        "source": "小马 · 一起看",
+        "error": "HTTP Error 404: Not Found",
+        "retained": false
+      }
+    ]
+  },
   "youtubeChannels": [
     {
       "id": "cctv-drama",
