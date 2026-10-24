@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-23T01:28:59.702085+00:00",
+  "updatedAt": "2026-10-24T01:34:23.257795+00:00",
   "attribution": {
     "name": "awesome-zhuiju-free",
     "author": "laoma2053 and contributors",
@@ -268,6 +268,11 @@
         "source": "小马 · 咪咕",
         "error": "No compatible live channels",
         "retained": false
+      },
+      {
+        "source": "小马 · 自动更新",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>",
+        "retained": true
       },
       {
         "source": "小马 · 音乐所",
