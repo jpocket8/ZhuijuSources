@@ -93,6 +93,10 @@
     {
       "name": "无邪补充配置",
       "url": "https://d.kstore.dev/download/9280/wex.json"
+    },
+    {
+      "name": "小马 Fastlink 配置",
+      "url": "https://fastlink.cokey.xyz/f/KoMkhW/xm.json"
     }
   ]
 }

@@ -59,3 +59,7 @@ python scripts/update_sources.py
 `tvboxSubscriptions` 接入 [wuxierj/TVBox](https://github.com/wuxierj/TVBox) 推荐的无邪多仓入口及补充配置。递归展开 `storeHouse` / `urls`，最多 3 层、40 个地址、180 秒；循环引用与重复地址只读取一次。GitHub 原始文件代理链接转换为直连；HTTP 配置地址仅尝试 HTTPS 对应地址，不能安全读取的入口跳过并报告。
 
 导入标准 `type=1` JSON 点播接口及现有适配器支持的直播列表。新增点播接口先请求第一页详情，只有返回标准节目条目的才纳入订阅；忽略列表查询参数的等价地址去重，并保留原有源的配置。独立实现数据解析，不复制或执行第三方 JS/JAR。可选入口失败不影响原有必需片源，`tvboxImport` 提供扫描数量与失败原因，直播获取错误继续记入 `liveImport`。这些第三方数据不适用本仓库上游的 CC BY 许可，权利归原提供者；配置能解析不代表所有节目可播放。
+
+### 用户补充入口
+
+已将 `https://fastlink.cokey.xyz/f/KoMkhW/xm.json` 加入可选 `tvboxSubscriptions`。2026-10-25 在当前网络直接读取返回 HTTP 567（TencentEdgeOne HTML 错误页），普通浏览器与播放器 User-Agent 重试结果相同，因此尚未从该地址新增片源。每日更新会重新尝试，成功获取后按相同的去重、标准点播验证及直播转换规则导入；失败不影响其他可用入口。
