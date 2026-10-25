@@ -89,6 +89,35 @@ def build(settings, fetcher=fetch, live_fetcher=None):
         live, files, skipped = extract_live(config, address, upstream, live_fetcher or fetch_text, previous_live, live_errors)
         rows.extend(live); live_artifacts.update(files); live_skipped += skipped
         origins.append(dict(id=upstream['id'],name=upstream['name'],url=address))
+    tvbox_report = {}
+    if settings.get('tvboxSubscriptions'):
+        from tvbox_catalog import discover, validate_vod, source_key
+        configs, tvbox_report = discover(settings['tvboxSubscriptions'])
+        candidates = []
+        for config, address, upstream in configs:
+            try:
+                candidates.extend(extract(config, address, upstream))
+            except ValueError:
+                pass  # Plugin-only catalogs can still supply standard live lists.
+            try:
+                live, files, skipped = extract_live(config, address, upstream, live_fetcher or fetch_text, previous_live, live_errors)
+                rows.extend(live); live_artifacts.update(files); live_skipped += skipped
+            except (ValueError, TypeError) as error:
+                live_errors.append(dict(source=upstream['name'], error=str(error)))
+            origins.append(upstream)
+        known = {source_key(row['url']) for row in rows if row['kind'] == 'json-vod'}
+        unique = []
+        for candidate in candidates:
+            key = source_key(candidate['url'])
+            if key not in known:
+                unique.append(candidate)
+                known.add(key)
+        candidates = unique
+        checked, failures = validate_vod(candidates)
+        rows.extend(checked)
+        tvbox_report['vodChecked'] = len(candidates)
+        tvbox_report['vodPassed'] = len(checked)
+        tvbox_report['vodErrors'] = failures
     # Append optional live lists so existing source numbering is preserved.
     rows.extend(settings.get("additionalSources", []))
     result = []
@@ -107,11 +136,11 @@ def build(settings, fetcher=fetch, live_fetcher=None):
                 attribution=dict(name='awesome-zhuiju-free', author='laoma2053 and contributors',
                                  url='https://github.com/laoma2053/awesome-zhuiju-free',
                                  license='CC-BY-4.0', changes='Selected and normalized standard HTTPS interfaces; added app metadata'),
-                upstreams=origins, sources=result, liveImport=dict(skipped=live_skipped, playlists=len(live_artifacts), errors=live_errors), _liveArtifacts=live_artifacts)
+                upstreams=origins, sources=result, tvboxImport=tvbox_report, liveImport=dict(skipped=live_skipped, playlists=len(live_artifacts), errors=live_errors), _liveArtifacts=live_artifacts)
 
 def main():
     settings = json.loads((ROOT / 'settings.json').read_text(encoding='utf-8'))
-    manifest = build(settings)  # Do not replace last good file if ANY upstream fails.
+    manifest = build(settings)  # Do not replace last good file if a required upstream fails.
     manifest['youtubeChannels'] = json.loads((ROOT / 'youtube-channels.json').read_text(encoding='utf-8'))
     for name, content in manifest.pop('_liveArtifacts').items():
         folder = ROOT / 'live'; folder.mkdir(exist_ok=True)

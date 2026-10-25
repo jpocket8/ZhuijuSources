@@ -12,7 +12,7 @@ GitHub Actions 每天 UTC 23:17（北京时间次日 07:17、布里斯班次日 
 
 任务读取 awesome-zhuiju-free 最新目录，按稳定 ID 找到老刘备、小马的配置地址，再提取 HTTPS 标准 JSON（type=1）接口。去重后生成 sources.json。不执行 JS/JAR 插件；暂不兼容的资源不会自动成为可用片源。同步成功不等于所有影片均能播放。
 
-任一上游获取或解析失败时，任务失败并保留上一版 sources.json，避免空配置覆盖。Git 历史可回退。需关注 Actions 失败通知。
+任一必需上游（`upstreams`）获取或解析失败时，任务失败并保留上一版 sources.json，避免空配置覆盖。Git 历史可回退。需关注 Actions 失败通知。
 
 settings.json 的 pinned 是置顶保留片源与已知功能限制，disabledUrls 可禁用地址，upstreams 指定已适配的上游 ID。sources.json 是生成文件，不应直接维护。
 
@@ -53,3 +53,9 @@ python scripts/update_sources.py
 支持 `lives[].url` 指向 M3U 或 `频道名,地址` 的 TXT（含 `分组,#genre#`、`#` 分隔多线路），以及内嵌 `groups[].channels[].urls`。保留分组、频道标识、台标、User-Agent/Referer；重复频道地址去重，协议不支持的条目跳过。频道可以使用 HTTP/HTTPS，订阅必须 HTTPS。不导入点播 Spider、加密配置或代理指令。
 
 转换后的 M3U 放在 `live/`，通过现有 `sources.json` 下发给所有客户端，继续使用客户端的线路检测和同频道合并。更新结果的 `liveImport` 记录跳过条目和上游错误；下载失败保留该订阅上次成功文件，首次失败则跳过，不阻塞其他直播源。此列表是可解析地址，不代表每个频道都已验证可播放。
+
+### 无邪 TVBox 多仓接入
+
+`tvboxSubscriptions` 接入 [wuxierj/TVBox](https://github.com/wuxierj/TVBox) 推荐的无邪多仓入口及补充配置。递归展开 `storeHouse` / `urls`，最多 3 层、40 个地址、180 秒；循环引用与重复地址只读取一次。GitHub 原始文件代理链接转换为直连；HTTP 配置地址仅尝试 HTTPS 对应地址，不能安全读取的入口跳过并报告。
+
+导入标准 `type=1` JSON 点播接口及现有适配器支持的直播列表。新增点播接口先请求第一页详情，只有返回标准节目条目的才纳入订阅；忽略列表查询参数的等价地址去重，并保留原有源的配置。独立实现数据解析，不复制或执行第三方 JS/JAR。可选入口失败不影响原有必需片源，`tvboxImport` 提供扫描数量与失败原因，直播获取错误继续记入 `liveImport`。这些第三方数据不适用本仓库上游的 CC BY 许可，权利归原提供者；配置能解析不代表所有节目可播放。

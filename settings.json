@@ -84,5 +84,15 @@
       "url": "https://iptv-org.github.io/iptv/index.m3u",
       "upstreamRepository": "https://github.com/iptv-org/iptv"
     }
+  ],
+  "tvboxSubscriptions": [
+    {
+      "name": "无邪 TVBox 多仓",
+      "url": "https://raw.githubusercontent.com/wxrjck/-YSC-/refs/heads/main/wx.json"
+    },
+    {
+      "name": "无邪补充配置",
+      "url": "https://d.kstore.dev/download/9280/wex.json"
+    }
   ]
 }

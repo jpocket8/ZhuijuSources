@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-25T01:08:19.433349+00:00",
+  "updatedAt": "2026-10-25T04:17:38.658676+00:00",
   "attribution": {
     "name": "awesome-zhuiju-free",
     "author": "laoma2053 and contributors",
@@ -18,6 +18,36 @@
       "id": "xiao-ma",
       "name": "小马",
       "url": "https://szyyds.cn/tv/x.json"
+    },
+    {
+      "id": "tvbox:5d18e8987b27f541",
+      "name": "无邪补充配置",
+      "url": "https://d.kstore.dev/download/9280/wex.json"
+    },
+    {
+      "id": "tvbox:11d02210ce4f2bed",
+      "name": "🚀无邪┃王二小备用",
+      "url": "https://9280.kstore.vip/newwex.json"
+    },
+    {
+      "id": "tvbox:9b0c004944ab984a",
+      "name": "💎无邪┃老刘备线路",
+      "url": "https://raw.githubusercontent.com/liu673cn/box/main/m.json"
+    },
+    {
+      "id": "tvbox:a989545ca2d87a6c",
+      "name": "💎无邪┃分享者线路",
+      "url": "https://raw.githubusercontent.com/maoystv/6/main/001.json"
+    },
+    {
+      "id": "tvbox:958e188c89100d6d",
+      "name": "💎无邪┃高天流云线路",
+      "url": "https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json"
+    },
+    {
+      "id": "tvbox:a7a5f0df902c3996",
+      "name": "💎无邪┃香雅晴线路",
+      "url": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json"
     }
   ],
   "sources": [
@@ -206,6 +236,128 @@
       "upstream": "xiao-ma"
     },
     {
+      "id": "tvbox-live:c33cb5df7a3e3cdc",
+      "name": "无邪补充配置 · Kimentanm",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/jpocket8/ZhuijuSources/main/live/tvbox-live-c33cb5df7a3e3cdc.m3u",
+      "upstream": "tvbox:5d18e8987b27f541"
+    },
+    {
+      "id": "tvbox-live:24b366b3f630ba97",
+      "name": "💎无邪┃老刘备线路 · SAO0",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/jpocket8/ZhuijuSources/main/live/tvbox-live-24b366b3f630ba97.m3u",
+      "upstream": "tvbox:9b0c004944ab984a"
+    },
+    {
+      "id": "tvbox-live:20194266bff5b002",
+      "name": "💎无邪┃分享者线路 · 💖分享者直播",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/jpocket8/ZhuijuSources/main/live/tvbox-live-20194266bff5b002.m3u",
+      "upstream": "tvbox:a989545ca2d87a6c"
+    },
+    {
+      "id": "tvbox-live:9bf92211dd1db960",
+      "name": "💎无邪┃分享者线路 · 💖分享者直播2",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/jpocket8/ZhuijuSources/main/live/tvbox-live-9bf92211dd1db960.m3u",
+      "upstream": "tvbox:a989545ca2d87a6c"
+    },
+    {
+      "id": "tvbox-live:af30b5d7d66ddb44",
+      "name": "💎无邪┃高天流云线路 · 初秋语",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/jpocket8/ZhuijuSources/main/live/tvbox-live-af30b5d7d66ddb44.m3u",
+      "upstream": "tvbox:958e188c89100d6d"
+    },
+    {
+      "id": "tvbox-live:5186359174500493",
+      "name": "💎无邪┃香雅晴线路 · Tianmu",
+      "kind": "m3u",
+      "url": "https://raw.githubusercontent.com/jpocket8/ZhuijuSources/main/live/tvbox-live-5186359174500493.m3u",
+      "upstream": "tvbox:a7a5f0df902c3996"
+    },
+    {
+      "id": "tvbox:a989545ca2d87a6c:5a2bea87715d0292",
+      "name": "💎无邪┃分享者线路 · 💝分享纯净",
+      "kind": "json-vod",
+      "url": "https://api.wsyzy.net/api.php/provide/vod/?ac=list",
+      "upstream": "tvbox:a989545ca2d87a6c",
+      "canSearch": true
+    },
+    {
+      "id": "tvbox:a989545ca2d87a6c:dd3e59bd879f1515",
+      "name": "💎无邪┃分享者线路 · 💝分享猫眼",
+      "kind": "json-vod",
+      "url": "https://api.maoyanapi.top/api.php/provide/vod/at/json",
+      "upstream": "tvbox:a989545ca2d87a6c",
+      "canSearch": true
+    },
+    {
+      "id": "tvbox:a989545ca2d87a6c:e86eec9ebd2867ab",
+      "name": "💎无邪┃分享者线路 · 💖分享卫士",
+      "kind": "json-vod",
+      "url": "https://360zy.com/api.php/provide/vod",
+      "upstream": "tvbox:a989545ca2d87a6c",
+      "canSearch": true
+    },
+    {
+      "id": "tvbox:a989545ca2d87a6c:58d50e4cfc4375ac",
+      "name": "💎无邪┃分享者线路 · 💝分享高清",
+      "kind": "json-vod",
+      "url": "https://api.yzzy-api.com/inc/apijson.php",
+      "upstream": "tvbox:a989545ca2d87a6c",
+      "canSearch": true
+    },
+    {
+      "id": "tvbox:a989545ca2d87a6c:b301db37a2f74710",
+      "name": "💎无邪┃分享者线路 · 💖分享如意",
+      "kind": "json-vod",
+      "url": "https://cj.rycjapi.com/api.php/provide/vod/",
+      "upstream": "tvbox:a989545ca2d87a6c",
+      "canSearch": true
+    },
+    {
+      "id": "tvbox:a989545ca2d87a6c:13dab588b961ed49",
+      "name": "💎无邪┃分享者线路 · 💖分享U|酷",
+      "kind": "json-vod",
+      "url": "https://api.ukuapi88.com/api.php/provide/vod/",
+      "upstream": "tvbox:a989545ca2d87a6c",
+      "canSearch": true
+    },
+    {
+      "id": "tvbox:a989545ca2d87a6c:48598970e418684d",
+      "name": "💎无邪┃分享者线路 · 💖分享最大",
+      "kind": "json-vod",
+      "url": "https://api.zuidapi.com/api.php/provide/vod/?ac=list",
+      "upstream": "tvbox:a989545ca2d87a6c",
+      "canSearch": true
+    },
+    {
+      "id": "tvbox:a989545ca2d87a6c:097e10dee276261b",
+      "name": "💎无邪┃分享者线路 · 💖分享金鹰",
+      "kind": "json-vod",
+      "url": "https://jyzyapi.com/provide/vod/",
+      "upstream": "tvbox:a989545ca2d87a6c",
+      "canSearch": true
+    },
+    {
+      "id": "tvbox:a989545ca2d87a6c:1f40ddd28e59a630",
+      "name": "💎无邪┃分享者线路 · ️✈️极速采集",
+      "kind": "json-vod",
+      "url": "https://jszyapi.com/api.php/provide/vod/at/json",
+      "upstream": "tvbox:a989545ca2d87a6c",
+      "canSearch": true
+    },
+    {
+      "id": "tvbox:a989545ca2d87a6c:713acf3df78d398f",
+      "name": "💎无邪┃分享者线路 · 🐯虎口拔牙",
+      "kind": "json-vod",
+      "url": "https://www.huyaapi.com/api.php/provide/vod/",
+      "upstream": "tvbox:a989545ca2d87a6c",
+      "canSearch": true
+    },
+    {
       "id": "free-au",
       "name": "Free-TV · 澳洲",
       "kind": "m3u",
@@ -255,9 +407,83 @@
       "upstreamRepository": "https://github.com/iptv-org/iptv"
     }
   ],
+  "tvboxImport": {
+    "visited": 19,
+    "configurations": 6,
+    "errors": [
+      {
+        "url": "http://www.饭太硬.net/tv",
+        "error": "'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+      },
+      {
+        "url": "http://肥猫.net/tv",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'xn--z7x900a.net'. (_ssl.c:1082)>"
+      },
+      {
+        "url": "http://我不是.摸鱼儿.cc",
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "url": "http://tvbox.王二小放牛娃.top",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1082)>"
+      },
+      {
+        "url": "http://box.ufuzi.com/tv/qq/短剧频道/api.json",
+        "error": "<urlopen error timed out>"
+      },
+      {
+        "url": "https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "url": "http://fty.888484.xyz/tv",
+        "error": "Non-HTTPS redirect"
+      },
+      {
+        "url": "http://hello.肥猫.net",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'hello.xn--z7x900a.net'. (_ssl.c:1082)>"
+      },
+      {
+        "url": "http://fish.y456y.com",
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "url": "http://home.jundie.top:81/top98.json",
+        "error": "<urlopen error [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1082)>"
+      }
+    ],
+    "vodChecked": 16,
+    "vodPassed": 10,
+    "vodErrors": [
+      {
+        "url": "https://kk.666888.club/vod/cibn_api.php/provide/vod/",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "url": "https://cj.jusj.top/api.php/provide/vod/?ac=list",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "url": "https://caiji.dbzy.tv/api.php/provide/vod/",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "url": "https://collect.wolongzyw.com/api.php/provide/vod/",
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "url": "https://pg.fenwe078.cf/api.php/provide/vod/",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "url": "https://p2100.net/api.php/provide/vod/",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ]
+  },
   "liveImport": {
-    "skipped": 10,
-    "playlists": 3,
+    "skipped": 25,
+    "playlists": 9,
     "errors": [
       {
         "source": "老刘备 · IPV6",
@@ -271,7 +497,7 @@
       },
       {
         "source": "小马 · 自动更新",
-        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)>",
         "retained": true
       },
       {
@@ -282,6 +508,36 @@
       {
         "source": "小马 · 一起看",
         "error": "HTTP Error 404: Not Found",
+        "retained": false
+      },
+      {
+        "source": "无邪补充配置 · 综合直播",
+        "error": "No compatible live channels",
+        "retained": false
+      },
+      {
+        "source": "🚀无邪┃王二小备用 · Kimentanm",
+        "error": "HTTP Error 403: Forbidden",
+        "retained": false
+      },
+      {
+        "source": "💎无邪┃老刘备线路 · IPV6",
+        "error": "HTTP Error 404: Not Found",
+        "retained": false
+      },
+      {
+        "source": "💎无邪┃分享者线路 · 💝分享者直播+",
+        "error": "HTTP Error 502: Bad Gateway",
+        "retained": false
+      },
+      {
+        "source": "💎无邪┃高天流云线路 · Ray",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+        "retained": false
+      },
+      {
+        "source": "💎无邪┃香雅晴线路 · BMCH",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
         "retained": false
       }
     ]

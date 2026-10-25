@@ -1,4 +1,5 @@
 import unittest
+from unittest.mock import patch
 from update_sources import build, extract, parse_config
 
 class UpdateTests(unittest.TestCase):
@@ -38,6 +39,16 @@ class UpdateTests(unittest.TestCase):
                         'additionalSources': [live, dict(live, id='duplicate')]},
                        lambda _: {'resources': []})
         self.assertEqual(['saved', 'live'], [row['id'] for row in result['sources']])
+
+    def test_optional_plugin_and_bad_live_do_not_abort(self):
+        config = {'sites':[{'type':3,'api':'plugin.jar'}], 'lives':'invalid'}
+        upstream = {'id':'tvbox:test','name':'test','url':'https://example.com/config'}
+        with patch('tvbox_catalog.discover', return_value=([(config, upstream['url'], upstream)], {})):
+            result = build({'catalog':'catalog', 'upstreams':[], 'pinned':[
+                {'id':'saved','kind':'json-vod','url':'https://example.com/api'}],
+                'tvboxSubscriptions':[{'name':'test','url':upstream['url']}]}, lambda _: {'resources':[]})
+        self.assertEqual(len(result['sources']), 1)
+        self.assertEqual(len(result['liveImport']['errors']), 1)
 
     def test_upstream_failure_aborts_publish(self):
         def fetch(url):
