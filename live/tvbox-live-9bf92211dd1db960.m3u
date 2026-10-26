@@ -752,7 +752,7 @@ https://stream1.freetv.fun/shan-tou-jing-ji-4.ctv
 #EXTINF:-1 group-title="☘️广东频道" tvg-id="汕头经济" tvg-logo="https://www.xn--rgv465a.top/tvlogo/汕头经济.png" tvg-country="",汕头经济
 https://stream1.freetv.fun/shan-tou-jing-ji-2.ctv
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="浙江钱江都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江钱江.png" tvg-country="",浙江钱江
-https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?
+https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="浙江钱江都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江钱江都市.png" tvg-country="",浙江钱江都市
 https://t.freetv.fun/live/zhe-jiang-qian-jiang-du-shi-1.m3u8
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="浙江钱江都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江钱江都市.png" tvg-country="",浙江钱江都市
@@ -772,17 +772,15 @@ http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="浙江教育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江教育.png" tvg-country="",浙江教育
 http://ali-m-l.cztv.com/channels/lantian/channel04/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="浙江民生" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江民生.png" tvg-country="",浙江民生
-https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8?
+https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="浙江民生" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江民生.png" tvg-country="",浙江民生
 http://ali-m-l.cztv.com/channels/lantian/channel06/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="浙江新闻频道" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江新闻.png" tvg-country="",浙江新闻
-https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8?
+https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="浙江新闻频道" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江新闻.png" tvg-country="",浙江新闻
 http://ali-m-l.cztv.com/channels/lantian/channel007/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="浙江少儿" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Zhejiang6.png" tvg-country="",浙江少儿
 https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道" tvg-id="浙江少儿" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江少儿.png" tvg-country="",浙江少儿
-https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="杭州综合" tvg-logo="https://www.xn--rgv465a.top/tvlogo/杭州综合.png" tvg-country="",杭州综合
 https://stream1.freetv.fun/hang-zhou-zong-he-3.ctv
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="杭州综合" tvg-logo="https://www.xn--rgv465a.top/tvlogo/杭州综合.png" tvg-country="",杭州综合
@@ -806,7 +804,7 @@ https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="浙江经济" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江经济.png" tvg-country="",浙江经济
 http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="浙江经济" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江经济.png" tvg-country="",浙江经济
-https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8?
+https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="浙江经济" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江经济.png" tvg-country="",浙江经济
 http://ali-m-l.cztv.com/channels/lantian/channel03/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道" tvg-id="之江纪录" tvg-logo="https://www.xn--rgv465a.top/tvlogo/之江纪录.png" tvg-country="",之江纪录
