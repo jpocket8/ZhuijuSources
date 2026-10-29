@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-28T02:13:57.289037+00:00",
+  "updatedAt": "2026-10-29T02:28:10.632191+00:00",
   "attribution": {
     "name": "awesome-zhuiju-free",
     "author": "laoma2053 and contributors",
@@ -441,7 +441,7 @@
       },
       {
         "url": "http://fty.888484.xyz/tv",
-        "error": "'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+        "error": "Non-HTTPS redirect"
       },
       {
         "url": "http://hello.肥猫.net",
@@ -511,7 +511,7 @@
       },
       {
         "source": "小马 · 一起看",
-        "error": "HTTP Error 404: Not Found",
+        "error": "Live import time budget reached",
         "retained": false
       },
       {
@@ -531,7 +531,7 @@
       },
       {
         "source": "💎无邪┃分享者线路 · 💝分享者直播+",
-        "error": "The read operation timed out",
+        "error": "HTTP Error 502: Bad Gateway",
         "retained": false
       },
       {
