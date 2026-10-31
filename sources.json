@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-30T02:36:59.265925+00:00",
+  "updatedAt": "2026-10-31T02:20:41.101616+00:00",
   "attribution": {
     "name": "awesome-zhuiju-free",
     "author": "laoma2053 and contributors",
@@ -429,7 +429,7 @@
       },
       {
         "url": "http://tvbox.王二小放牛娃.top",
-        "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>"
       },
       {
         "url": "http://box.ufuzi.com/tv/qq/短剧频道/api.json",
@@ -511,7 +511,7 @@
       },
       {
         "source": "小马 · 一起看",
-        "error": "Live import time budget reached",
+        "error": "HTTP Error 404: Not Found",
         "retained": false
       },
       {
