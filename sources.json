@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-31T02:20:41.101616+00:00",
+  "updatedAt": "2026-11-01T02:13:34.600427+00:00",
   "attribution": {
     "name": "awesome-zhuiju-free",
     "author": "laoma2053 and contributors",
@@ -453,7 +453,7 @@
       },
       {
         "url": "http://home.jundie.top:81/top98.json",
-        "error": "<urlopen error [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1010)>"
+        "error": "<urlopen error [SSL] record layer failure (_ssl.c:1010)>"
       }
     ],
     "vodChecked": 16,
@@ -515,8 +515,13 @@
         "retained": false
       },
       {
+        "source": "无邪补充配置 · Kimentanm",
+        "error": "<urlopen error timed out>",
+        "retained": true
+      },
+      {
         "source": "无邪补充配置 · 综合直播",
-        "error": "No compatible live channels",
+        "error": "<urlopen error timed out>",
         "retained": false
       },
       {
