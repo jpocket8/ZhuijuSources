@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-02T02:29:24.589292+00:00",
+  "updatedAt": "2026-11-03T03:56:35.019074+00:00",
   "videos": [
     {
       "id": "JmJZMBCPBfM",
@@ -6016,7 +6016,7 @@
       "category": "电影",
       "channelId": "UCZ8ZJNzzIiDQFuGxdGTyWcQ",
       "channelName": "爱奇艺大电影",
-      "duration": 4059,
+      "duration": 4058,
       "poster": "https://i.ytimg.com/vi/G3Ji56iV3xI/hqdefault.jpg"
     },
     {
@@ -6062,6 +6062,160 @@
       "channelName": "腾讯视频",
       "duration": 2052,
       "poster": "https://i.ytimg.com/vi/bcP7pPoIAhY/hqdefault.jpg"
+    },
+    {
+      "id": "yEZjoiSa5Ls",
+      "title": "扣押周恩来、抓捕李之龙！叶挺独立团首战大捷 国共裂痕却不断加深？《中流击水》EP22-24【CCTV电视剧】",
+      "programme": "中流击水",
+      "episode": "第22-24集",
+      "category": "剧集",
+      "channelId": "UC7Vl0YiY0rDlovqcCFN4yTA",
+      "channelName": "央视电视剧",
+      "duration": 7403,
+      "poster": "https://i.ytimg.com/vi/yEZjoiSa5Ls/hqdefault.jpg"
+    },
+    {
+      "id": "krKc-y13bSk",
+      "title": "傅官保歪打正着戳破宰相野心 赤脚大仙下凡寻刘大侠营救黄圣依和其腹中孩儿！《天仙配》EP26【CCTV电视剧】",
+      "programme": "天仙配",
+      "episode": "第26集",
+      "category": "剧集",
+      "channelId": "UC7Vl0YiY0rDlovqcCFN4yTA",
+      "channelName": "央视电视剧",
+      "duration": 2454,
+      "poster": "https://i.ytimg.com/vi/krKc-y13bSk/hqdefault.jpg"
+    },
+    {
+      "id": "2zhdGCmqrB0",
+      "title": "王辉执意转业 王海燕偷偷治癌症 甚至还让张嘉译在他死后娶池玉？《国家使命》EP17【CCTV电视剧】",
+      "programme": "国家使命",
+      "episode": "第17集",
+      "category": "剧集",
+      "channelId": "UC7Vl0YiY0rDlovqcCFN4yTA",
+      "channelName": "央视电视剧",
+      "duration": 2558,
+      "poster": "https://i.ytimg.com/vi/2zhdGCmqrB0/hqdefault.jpg"
+    },
+    {
+      "id": "-QvMonddqhQ",
+      "title": "【Multi | FULL】The Great Long March 伟大的长征 | EP20 | 长征何以永远 | iQIYI",
+      "programme": "伟大的长征",
+      "episode": "第20集",
+      "category": "剧集",
+      "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
+      "channelName": "爱奇艺",
+      "duration": 2735,
+      "poster": "https://i.ytimg.com/vi/-QvMonddqhQ/hqdefault.jpg"
+    },
+    {
+      "id": "yrhQN65E6BM",
+      "title": "【Multi | FULL】ACE TROOPS 王牌部队 | FULL 10 黄景瑜 & 肖战 & 钟楚曦🔥书写热血人生 | iQIYI",
+      "programme": "【Multi | FULL】ACE TROOPS 王牌部队 | FULL 10 黄景瑜 & 肖战 & 钟楚曦🔥书写热血人生 | iQIYI",
+      "episode": "【Multi | FULL】ACE TROOPS 王牌部队 | FULL 10 黄景瑜 & 肖战 & 钟楚曦🔥书写热血人生 | iQIYI",
+      "category": "剧集",
+      "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
+      "channelName": "爱奇艺",
+      "duration": 7466,
+      "poster": "https://i.ytimg.com/vi/yrhQN65E6BM/hqdefault.jpg"
+    },
+    {
+      "id": "KnHj8wWNtpw",
+      "title": "Follow your heart 颜心记 | FULL11  罗云熙 & 宋轶 & 陈瑶 & 丞磊🌙星霜荏苒，居诸不息；不辞青山，相随与共 | iQIYI",
+      "programme": "Follow your heart 颜心记 | FULL11  罗云熙 & 宋轶 & 陈瑶 & 丞磊🌙星霜荏苒，居诸不息；不辞青山，相随与共 | iQIYI",
+      "episode": "Follow your heart 颜心记 | FULL11  罗云熙 & 宋轶 & 陈瑶 & 丞磊🌙星霜荏苒，居诸不息；不辞青山，相随与共 | iQIYI",
+      "category": "剧集",
+      "channelId": "UCUhpu5MJQ_bjPkXO00jyxsw",
+      "channelName": "爱奇艺",
+      "duration": 7171,
+      "poster": "https://i.ytimg.com/vi/KnHj8wWNtpw/hqdefault.jpg"
+    },
+    {
+      "id": "SABqZxDTq-0",
+      "title": "【Multi Sub】《戒灵》JieLing 修仙废柴被迫带妹闯秘境，竟意外打破戒指枷锁突破元婴，唤醒上古白泽引来惊天杀局！​【玄幻 仙侠 | iQIYI 大电影】",
+      "programme": "戒灵",
+      "episode": "【Multi Sub】《戒灵》JieLing 修仙废柴被迫带妹闯秘境，竟意外打破戒指枷锁突破元婴，唤醒上古白泽引来惊天杀局！​【玄幻 仙侠 | iQIYI 大电影】",
+      "category": "电影",
+      "channelId": "UCZ8ZJNzzIiDQFuGxdGTyWcQ",
+      "channelName": "爱奇艺大电影",
+      "duration": 2837,
+      "poster": "https://i.ytimg.com/vi/SABqZxDTq-0/hqdefault.jpg"
+    },
+    {
+      "id": "1UdmEmwbVvk",
+      "title": "【Multi Sub】《松江教父-上集》The Godfather of Songjiang  兄弟反目血拼商会，却揭穿亲哥勾结日本人的惊天骗局！​【动作 犯罪 | iQIYI 大电影】",
+      "programme": "松江教父-上集",
+      "episode": "【Multi Sub】《松江教父-上集》The Godfather of Songjiang  兄弟反目血拼商会，却揭穿亲哥勾结日本人的惊天骗局！​【动作 犯罪 | iQIYI 大电影】",
+      "category": "电影",
+      "channelId": "UCZ8ZJNzzIiDQFuGxdGTyWcQ",
+      "channelName": "爱奇艺大电影",
+      "duration": 5603,
+      "poster": "https://i.ytimg.com/vi/1UdmEmwbVvk/hqdefault.jpg"
+    },
+    {
+      "id": "JgnZ_8-Yyo4",
+      "title": "《锦心似玉》The Sword and The Brocade EP30｜很幸运，侯爷平安回来了｜钟汉良、谭松韵｜MULTI SUB",
+      "programme": "锦心似玉",
+      "episode": "第30集",
+      "category": "剧集",
+      "channelId": "UCQatgKoA7lylp_UzvsLCgcw",
+      "channelName": "腾讯视频",
+      "duration": 2592,
+      "poster": "https://i.ytimg.com/vi/JgnZ_8-Yyo4/hqdefault.jpg"
+    },
+    {
+      "id": "TmVQf6Vnd1Y",
+      "title": "《锦心似玉》The Sword and The Brocade EP29｜徐太夫人狠狠为难十一娘，徐令宜被传遇到危险？｜钟汉良、谭松韵｜MULTI SUB",
+      "programme": "锦心似玉",
+      "episode": "第29集",
+      "category": "剧集",
+      "channelId": "UCQatgKoA7lylp_UzvsLCgcw",
+      "channelName": "腾讯视频",
+      "duration": 3035,
+      "poster": "https://i.ytimg.com/vi/TmVQf6Vnd1Y/hqdefault.jpg"
+    },
+    {
+      "id": "HGcs2ehOs6A",
+      "title": "《锦心似玉》The Sword and The Brocade EP28｜侯爷十一娘刺伤徐令宜，徐令宜留下和离书 ｜钟汉良、谭松韵｜MULTI SUB",
+      "programme": "锦心似玉",
+      "episode": "第28集",
+      "category": "剧集",
+      "channelId": "UCQatgKoA7lylp_UzvsLCgcw",
+      "channelName": "腾讯视频",
+      "duration": 3025,
+      "poster": "https://i.ytimg.com/vi/HGcs2ehOs6A/hqdefault.jpg"
+    },
+    {
+      "id": "iKRnlrUOtnU",
+      "title": "【Highlight 03】《余生，请多指教》The Oath of Love｜林之校天台为顾魏拉琴，把喜欢藏进一曲波尔卡｜杨紫、肖战",
+      "programme": "余生，请多指教",
+      "episode": "【Highlight 03】《余生，请多指教》The Oath of Love｜林之校天台为顾魏拉琴，把喜欢藏进一曲波尔卡｜杨紫、肖战",
+      "category": "剧集",
+      "channelId": "UCQatgKoA7lylp_UzvsLCgcw",
+      "channelName": "腾讯视频",
+      "duration": 1987,
+      "poster": "https://i.ytimg.com/vi/iKRnlrUOtnU/hqdefault.jpg"
+    },
+    {
+      "id": "kT6K04AxDrQ",
+      "title": "【Variety】《兰香如故·花胜秋宴》Against The Current: Variety Special｜刘学义、谭松韵｜下期：乐子听不够！全员整花活!｜Part.2 MULTI SUB",
+      "programme": "兰香如故·花胜秋宴",
+      "episode": "【Variety】《兰香如故·花胜秋宴》Against The Current: Variety Special｜刘学义、谭松韵｜下期：乐子听不够！全员整花活!｜Part.2 MULTI SUB",
+      "category": "剧集",
+      "channelId": "UCQatgKoA7lylp_UzvsLCgcw",
+      "channelName": "腾讯视频",
+      "duration": 3311,
+      "poster": "https://i.ytimg.com/vi/kT6K04AxDrQ/hqdefault.jpg"
+    },
+    {
+      "id": "rRhAi-HYH_w",
+      "title": "《走马上任》Let's Go EP01｜王小利、赵本山｜王老五刚出任伏虎县长，就遭日本间谍下毒｜MULTI SUB",
+      "programme": "走马上任",
+      "episode": "第01集",
+      "category": "剧集",
+      "channelId": "UCQatgKoA7lylp_UzvsLCgcw",
+      "channelName": "腾讯视频",
+      "duration": 1944,
+      "poster": "https://i.ytimg.com/vi/rRhAi-HYH_w/hqdefault.jpg"
     }
   ]
 }
