@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-12T03:49:00.049830+00:00",
+  "updatedAt": "2026-11-13T03:24:45.313540+00:00",
   "attribution": {
     "name": "awesome-zhuiju-free",
     "author": "laoma2053 and contributors",
@@ -417,7 +417,7 @@
       },
       {
         "url": "http://www.饭太硬.net/tv",
-        "error": "'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+        "error": "Non-HTTPS redirect"
       },
       {
         "url": "http://肥猫.net/tv",
@@ -441,7 +441,7 @@
       },
       {
         "url": "http://fty.888484.xyz/tv",
-        "error": "'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+        "error": "Non-HTTPS redirect"
       },
       {
         "url": "http://hello.肥猫.net",
