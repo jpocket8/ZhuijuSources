@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-13T03:24:45.313540+00:00",
+  "updatedAt": "2026-11-14T03:12:50.085789+00:00",
   "attribution": {
     "name": "awesome-zhuiju-free",
     "author": "laoma2053 and contributors",
@@ -326,14 +326,6 @@
       "canSearch": true
     },
     {
-      "id": "tvbox:a989545ca2d87a6c:48598970e418684d",
-      "name": "💎无邪┃分享者线路 · 💖分享最大",
-      "kind": "json-vod",
-      "url": "https://api.zuidapi.com/api.php/provide/vod/?ac=list",
-      "upstream": "tvbox:a989545ca2d87a6c",
-      "canSearch": true
-    },
-    {
       "id": "tvbox:a989545ca2d87a6c:097e10dee276261b",
       "name": "💎无邪┃分享者线路 · 💖分享金鹰",
       "kind": "json-vod",
@@ -417,7 +409,7 @@
       },
       {
         "url": "http://www.饭太硬.net/tv",
-        "error": "Non-HTTPS redirect"
+        "error": "'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
       },
       {
         "url": "http://肥猫.net/tv",
@@ -441,7 +433,7 @@
       },
       {
         "url": "http://fty.888484.xyz/tv",
-        "error": "Non-HTTPS redirect"
+        "error": "'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
       },
       {
         "url": "http://hello.肥猫.net",
@@ -457,7 +449,7 @@
       }
     ],
     "vodChecked": 16,
-    "vodPassed": 10,
+    "vodPassed": 9,
     "vodErrors": [
       {
         "url": "https://kk.666888.club/vod/cibn_api.php/provide/vod/",
@@ -474,6 +466,10 @@
       {
         "url": "https://collect.wolongzyw.com/api.php/provide/vod/",
         "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "url": "https://api.zuidapi.com/api.php/provide/vod/?ac=list",
+        "error": "The read operation timed out"
       },
       {
         "url": "https://pg.fenwe078.cf/api.php/provide/vod/",
@@ -511,7 +507,7 @@
       },
       {
         "source": "小马 · 一起看",
-        "error": "HTTP Error 404: Not Found",
+        "error": "Live import time budget reached",
         "retained": false
       },
       {
