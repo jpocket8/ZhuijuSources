@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-21T03:58:50.549147+00:00",
+  "updatedAt": "2026-11-22T03:10:37.043499+00:00",
   "attribution": {
     "name": "awesome-zhuiju-free",
     "author": "laoma2053 and contributors",
@@ -525,6 +525,11 @@
         "source": "💎无邪┃老刘备线路 · IPV6",
         "error": "HTTP Error 404: Not Found",
         "retained": false
+      },
+      {
+        "source": "💎无邪┃分享者线路 · 💖分享者直播",
+        "error": "HTTP Error 403: Forbidden",
+        "retained": true
       },
       {
         "source": "💎无邪┃分享者线路 · 💝分享者直播+",
