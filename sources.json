@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24T06:57:31.043569+00:00",
+  "updatedAt": "2026-11-25T05:28:01.757559+00:00",
   "attribution": {
     "name": "awesome-zhuiju-free",
     "author": "laoma2053 and contributors",
@@ -508,7 +508,7 @@
       },
       {
         "source": "小马 · 一起看",
-        "error": "HTTP Error 404: Not Found",
+        "error": "Live import time budget reached",
         "retained": false
       },
       {
